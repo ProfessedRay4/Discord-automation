@@ -2,7 +2,7 @@ import time
 import pyautogui
 from art import tprint
 from colorama import Fore
-
+from random import randint
 
 tprint(' Vfisher auto farm ', font="nancyj")
 print(Fore.GREEN + 'Farm bot has succesfully Initialized...')
@@ -19,18 +19,19 @@ time.sleep(5)
 farm = 0
 
 def fish():
-    print(Fore.GREEN + "fishing...")
+    sleepy = randint(4, 8)
     pyautogui.getWindowsWithTitle("Discord")[0].maximize()
+    print(Fore.BLUE + "fishing...")
     pyautogui.moveTo(460, 985, 2)
-    pyautogui.click(x=460, y=985)
-    time.sleep(1)
+    pyautogui.click()
+    time.sleep(.5)
     pyautogui.typewrite('/fish')
-    time.sleep(1)
+    time.sleep(.5)
     pyautogui.press("tab")
-    time.sleep(1)
+    time.sleep(.5)
     pyautogui.press('enter')
-    print(Fore.GREEN + 'Succesfully did /fish sleeping for 4 seconds')
-    time.sleep(4)
+    print(Fore.GREEN + 'Succesfully did /fish sleeping for {} seconds'.format(sleepy))
+    time.sleep(sleepy)
 
 while True:
     fish()
