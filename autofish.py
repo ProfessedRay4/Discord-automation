@@ -16,7 +16,7 @@ print(Fore.BLACK + 'Discord open! beginning farm.')
 # farming
 farm = 0
 
-while farm < 50000:
+while farm < 5000:
     pyautogui.moveTo(765, 993)
     pyautogui.click()
     pyautogui.write('/fish')

@@ -7,8 +7,6 @@ pip install art
 cls
 pip install colorama
 cls
-pip install time
-cls
 pip install progressbar
 cls
 
