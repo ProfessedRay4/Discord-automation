@@ -1,30 +1,34 @@
 import time
 import pyautogui
-from art import tprint, text2art
+from art import tprint
 from colorama import Fore
 
 
-
 tprint(' Vfisher auto farm ', font="nancyj")
-print(Fore.GREEN + 'Farm bot has succesfully started...')
+print(Fore.GREEN + 'Farm bot has succesfully Initialized...')
 time.sleep(1)
 
-pyautogui.getWindowsWithTitle("Discord")[0].maximize()
+discord_window = pyautogui.getWindowsWithTitle('Discord')[0]
+discord_window.maximize()
 
-print(Fore.BLACK + 'Discord open! beginning farm.')
+print(Fore.GREEN + 'Discord open! beginning farm in 5 seconds...')
+time.sleep(5)
 
-# farming
+
+# fishing
 farm = 0
 
-while farm < 5000:
+def fish():
     pyautogui.moveTo(765, 993)
     pyautogui.click()
     pyautogui.write('/fish')
     time.sleep(.5)
     pyautogui.press('tab')
-    pyautogui.keyDown('enter')
-    print(Fore.GREEN + 'Succesfully did /fish sleeping for 4 seconds')
-    time.sleep(3.5)
+    pyautogui.press('enter')
+    print(Fore.GREEN + 'Succesfully did /fish sleeping for 5 seconds...')
+    time.sleep(5)
+    
+while True:
+    fish()
 
 
-    farm = +1
