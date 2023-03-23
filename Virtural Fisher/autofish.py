@@ -19,15 +19,19 @@ time.sleep(5)
 farm = 0
 
 def fish():
-    pyautogui.moveTo(765, 993)
-    pyautogui.click()
-    pyautogui.write('/fish')
-    time.sleep(.5)
-    pyautogui.press('tab')
+    print(Fore.GREEN + "fishing...")
+    pyautogui.getWindowsWithTitle("Discord")[0].maximize()
+    pyautogui.moveTo(460, 985, 2)
+    pyautogui.click(x=460, y=985)
+    time.sleep(1)
+    pyautogui.typewrite('/fish')
+    time.sleep(1)
+    pyautogui.press("tab")
+    time.sleep(1)
     pyautogui.press('enter')
-    print(Fore.GREEN + 'Succesfully did /fish sleeping for 5 seconds...')
-    time.sleep(5)
-    
+    print(Fore.GREEN + 'Succesfully did /fish sleeping for 4 seconds')
+    time.sleep(4)
+
 while True:
     fish()
 
