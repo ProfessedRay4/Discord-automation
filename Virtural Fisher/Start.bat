@@ -9,6 +9,8 @@ pip install colorama
 cls
 pip install progressbar
 cls
+pip install random
+cls
 
 
 echo Libraires installed...
