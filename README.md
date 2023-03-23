@@ -8,7 +8,7 @@ I made this automation bot to show what you can do with Pyautogui
 ## Future Updates
 
 - Add ban detection
-- Add a selective terminal
+- Add a selective terminal to turn it into more of a utility tool (all in one)
 - Turn it into more of a selfbot so you can do other things while it is running
 
 
