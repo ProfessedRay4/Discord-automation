@@ -22,4 +22,4 @@ I made this automation bot to show what you can do with Pyautogui
 ## How to Contribute
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md) 
 
----
+Message me on Discord: ``ProfessedRay4#1436``
