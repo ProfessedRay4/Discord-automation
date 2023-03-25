@@ -20,7 +20,7 @@ keyboard_listener.start()
 
 
 def start():
-    print(fade.purplepink(f"""
+    print(fade.purplepink("""
                         
       ██╗███╗   ██╗███████╗
       ██║████╗  ██║██╔════╝
@@ -34,6 +34,7 @@ def start():
     time.sleep(1)
     pyautogui.getWindowsWithTitle('Discord')[0].maximize()
     print(Fore.GREEN + 'Discord open! beginning farm in 5 seconds...')
+    print(fade.purpleblue("Press 'q' to close the script"))
     time.sleep(5)
 
 start()
