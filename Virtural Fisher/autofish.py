@@ -11,6 +11,7 @@ keyboard_quit = False
 def keyboard_handler(key):
     global keyboard_quit
     if hasattr(key, 'char') and key.char == 'q':
+        pyautogui.press("backspace")
         print(Fore.RED + "Program closing, please wait")
         keyboard_quit = True
 
