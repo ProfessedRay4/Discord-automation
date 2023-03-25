@@ -3,18 +3,40 @@ import pyautogui
 from art import tprint
 from colorama import Fore
 from random import randint
+from pynput.keyboard import Listener
+import fade
 
-tprint(' Vfisher auto farm ', font="nancyj")
-print(Fore.GREEN + 'Farm bot has succesfully Initialized...')
-time.sleep(1)
+keyboard_quit = False
 
-discord_window = pyautogui.getWindowsWithTitle('Discord')[0]
-discord_window.maximize()
+def keyboard_handler(key):
+    global keyboard_quit
+    if hasattr(key, 'char') and key.char == 'q':
+        print(Fore.RED + "Program closing, please wait")
+        keyboard_quit = True
 
-print(Fore.GREEN + 'Discord open! beginning farm in 5 seconds...')
-time.sleep(5)
+keyboard_listener = Listener(on_press=keyboard_handler)
+keyboard_listener.start()
 
 
+
+def start():
+    print(fade.purplepink(f"""
+                        
+      ██╗███╗   ██╗███████╗
+      ██║████╗  ██║██╔════╝
+      ██║██╔██╗ ██║█████╗  
+      ██║██║╚██╗██║██╔══╝  
+      ██║██║ ╚████║██║     
+      ╚═╝╚═╝  ╚═══╝╚═╝ 
+
+"""))
+    print(Fore.GREEN + 'Farm bot has succesfully Initialized...')
+    time.sleep(1)
+    pyautogui.getWindowsWithTitle('Discord')[0].maximize()
+    print(Fore.GREEN + 'Discord open! beginning farm in 5 seconds...')
+    time.sleep(5)
+
+start()
 # fishing
 farm = 0
 
@@ -33,7 +55,11 @@ def fish():
     print(Fore.GREEN + 'Succesfully did /fish sleeping for {} seconds'.format(sleepy))
     time.sleep(sleepy)
 
-while True:
+
+while not keyboard_quit:
     fish()
+
+
+
 
 
