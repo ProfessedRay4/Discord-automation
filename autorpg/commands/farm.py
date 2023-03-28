@@ -12,7 +12,7 @@ def farm():
     time.sleep(.5)
     pyautogui.keyDown('enter')
     print(Fore.GREEN + 'Succesfully did rpg-farm sleeping for 290 seconds')
-    time.sleep(294)
+    time.sleep(378)
     
 while True:
     farm()

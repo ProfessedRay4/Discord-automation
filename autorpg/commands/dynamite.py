@@ -13,7 +13,7 @@ def dynamite():
     time.sleep(.5)
     pyautogui.keyDown('enter')
     print(Fore.GREEN + 'Succesfully did rpg-dynamite sleeping for 150 seconds')
-    time.sleep(153)
+    time.sleep(189)
 
 while True:
     dynamite()

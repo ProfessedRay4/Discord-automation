@@ -22,7 +22,7 @@ def adventure():
     time.sleep(.5)
     pyautogui.keyDown('enter')
     print(Fore.GREEN + 'Succesfully did rpg-adv and rpg-heal sleeping for 1815 seconds')
-    time.sleep(1823)
+    time.sleep(2340)
     
 while True:
     adventure()
