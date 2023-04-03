@@ -8,10 +8,8 @@ I made this automation bot to show what you can do with Pyautogui
 ## Future Updates
 
 - Add ban detection
-- Add a fail safe
 - Add a selective terminal to turn it into more of a utility tool (all in one)
-- Turn it into more of a selfbot so you can do other things while it is running
-
+- Turn it into more of a selfbot (in progress)
 
 
 ## Installation
@@ -22,6 +20,6 @@ I made this automation bot to show what you can do with Pyautogui
 
 
 ## How to Contribute
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md) 
+Fork the repository!
 
 Message me on Discord: ``ProfessedRay4#1436``
