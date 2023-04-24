@@ -15,7 +15,7 @@ echo Libraires installed...
 echo starting main script...
 cls
 
-
+python main.py
 
 set "dir=%~dp0commands\"
 
