@@ -13,7 +13,7 @@ def hunts():
     time.sleep(.5)
     pyautogui.keyDown('enter')
     print(Fore.GREEN + 'Succesfully did rpg-hunt and heal sleeping for 30 seconds')
-    time.sleep(63.3)
+    time.sleep(38.3)
 
 while True:
     hunts()
