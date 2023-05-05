@@ -24,4 +24,4 @@ I made this automation bot to show what you can do with Pyautogui. This bot uses
 ## How to Contribute
 Fork the repository!
 
-Message me on Discord: ``ProfessedRay4#1436``
+Message me on Discord: ``ProfessedRay4#2985``
