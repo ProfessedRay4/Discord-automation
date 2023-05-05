@@ -3,13 +3,14 @@
 
 ## Description
 
-I made this automation bot to show what you can do with Pyautogui
+I made this automation bot to show what you can do with Pyautogui. This bot uses threading for max performance and max safety ;).
 
 ## Future Updates
 
 - Add ban detection
-- Add a selective terminal to turn it into more of a utility tool (all in one)
-- Turn it into more of a selfbot (in progress)
+- Add a interactive terminal to turn it into more of a utility tool (all in one)
+- Turn it into a selfbot
+
 
 
 ## Installation
