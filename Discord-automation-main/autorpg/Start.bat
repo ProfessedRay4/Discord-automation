@@ -15,12 +15,5 @@ echo Libraires installed...
 echo starting main script...
 cls
 
-
-
-set "dir=%~dp0commands\"
-
-for %%f in ("%dir%*.py") do (
-    set "filename=%%~nf"
-    start "Python Script - !filename!" python "%%~ff"
-)
+python main.py
 
