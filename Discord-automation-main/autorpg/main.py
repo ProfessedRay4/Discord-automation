@@ -4,15 +4,35 @@ import time
 import pyautogui
 from art import tprint
 from colorama import Fore
+import fade
+import os
 
-tprint(' RPG auto farm ', font="nancyj")
-time.sleep(1.23)
-print(Fore.GREEN + '> Farm bot has succesfully initialized...')
-time.sleep(1)
+def start():
+    print(fade.purplepink("""
+ █████  ██    ██ ████████  ██████      ██████  ██████   ██████  
+██   ██ ██    ██    ██    ██    ██     ██   ██ ██   ██ ██       
+███████ ██    ██    ██    ██    ██     ██████  ██████  ██   ███ 
+██   ██ ██    ██    ██    ██    ██     ██   ██ ██      ██    ██ 
+██   ██  ██████     ██     ██████      ██   ██ ██       ██████  
+                                                                
+                                                                
+"""))
+  
+start()
 
-print(Fore.GREEN + "> Open Discord, Farm starting in 5 seconds!")
-
-time.sleep(5)
+def timer():
+    print(fade.purpleblue("starting in 5 seconds"))
+    time.sleep(1)
+    print(fade.purpleblue("starting in 4 seconds"))
+    time.sleep(1)
+    print(fade.purpleblue("starting in 3 seconds"))
+    time.sleep(1)
+    print(fade.purpleblue("starting in 2 seconds"))
+    time.sleep(1)
+    print(fade.purpleblue("starting in 1 second"))
+    os.system("cls")
+    start()
+timer()
 
 
 ########## FUNCTIONS ##########
